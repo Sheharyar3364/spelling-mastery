@@ -15,6 +15,7 @@ defer==1.0.6
 distlib==0.3.8
 distro==1.7.0
 distro-info==1.1+ubuntu0.2
+dj-database-url==2.2.0
 Django==5.0.6
 django-cors-headers==4.4.0
 djangorestframework==3.15.2
@@ -23,6 +24,7 @@ duplicity==0.8.21
 fasteners==0.14.1
 filelock==3.15.4
 future==0.18.2
+gunicorn==22.0.0
 httplib2==0.20.2
 idna==3.3
 importlib-metadata==4.6.4
@@ -45,12 +47,14 @@ netifaces==0.11.0
 nltk==3.8.1
 oauthlib==3.2.0
 olefile==0.46
+packaging==24.1
 paramiko==2.9.3
 pexpect==4.8.0
 Pillow==9.0.1
 pipenv==2024.0.1
 platformdirs==4.2.2
 protobuf==3.12.4
+psycopg2-binary==2.9.9
 ptyprocess==0.7.0
 pycairo==1.20.1
 pycups==2.0.1
