@@ -17,8 +17,8 @@ class Puzzle(models.Model):
     
     def clean(self):
         if not self.is_valid_puzzle():
-            raise ValidationError("No valid answer found for this puzzle. Please check the characters.")
-        
+            raise ValidationError("No valid answer found for this puzzle. Please check the characters.")  
+
 
     def is_valid_puzzle(self):
         # Access words from NLTK corpora
