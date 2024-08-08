@@ -210,6 +210,6 @@ nltk.data.path.append(os.path.join(BASE_DIR, 'nltk_data'))
 
 CORS_ORIGIN_ALLOW_ALL = False  # Set to True if you want to allow all origins
 CORS_ORIGIN_WHITELIST = (
-    'https://spelling-mastery-frontend.onrender.com',
-    'localhost'
+    os.environ.get('FRONTEND_URL'),  # Replace with your frontend URL
+    os.environ.get('PRODUCTION_URL'),
 )
