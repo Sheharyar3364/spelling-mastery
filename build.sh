@@ -4,7 +4,7 @@
 pip install -r requirements.txt
 
 # Run custom management command to download NLTK data
-python3 manage.py download_nltk_data
+python manage.py download_nltk_data
 
 # Apply database migrations
-python3 manage.py migrate
+python manage.py migrate
