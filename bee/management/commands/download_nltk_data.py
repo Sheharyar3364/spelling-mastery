@@ -1,12 +1,13 @@
-from django.core.management.base import BaseCommand
-import nltk
 import os
+import nltk
+from django.conf import settings
+from django.core.management.base import BaseCommand
 
 class Command(BaseCommand):
     help = 'Download necessary NLTK corpora'
 
     def handle(self, *args, **kwargs):
-        nltk_data_path = '/mnt/persistent/nltk_data'
+        nltk_data_path = os.path.join(settings.BASE_DIR, 'nltk_data')
         os.makedirs(nltk_data_path, exist_ok=True)
         nltk.data.path.append(nltk_data_path)
         

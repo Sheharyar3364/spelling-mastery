@@ -201,9 +201,9 @@ AUTH_USER_MODEL = "users.User"
 # SpellMaster/settings.py
 
 import os
-import nltk
 
-nltk.data.path.append('/mnt/persistent/nltk_data')
+# Define the NLTK data path
+NLTK_DATA_PATH = os.path.join(BASE_DIR, 'nltk_data')
 
 
 
