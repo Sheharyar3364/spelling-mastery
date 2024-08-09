@@ -203,8 +203,8 @@ AUTH_USER_MODEL = "users.User"
 import os
 import nltk
 
-# Add custom NLTK data path
-nltk.data.path.append(os.path.join(BASE_DIR, 'nltk_data'))
+nltk.data.path.append('/mnt/persistent/nltk_data')
+
 
 
 
